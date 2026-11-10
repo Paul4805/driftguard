@@ -45,25 +45,25 @@ def run_case(case: dict) -> dict:
     prefix = case["prefix"]
     command = [
         sys.executable,
-        str(ROOT / "driftguard.py"),
+        "driftguard.py",
         "--source",
-        str(DATA / "jogging_1.avi"),
+        "datasets/jogging_1.avi",
         "--bbox",
         case["bbox"],
         "--gt",
-        str(case["gt"]),
+        f"datasets/{case['gt'].name}",
         "--output",
-        str(DATA / f"{prefix}_output.avi"),
+        f"datasets/{prefix}_output.avi",
         "--plot",
-        str(DATA / f"{prefix}_psr.png"),
+        f"datasets/{prefix}_psr.png",
         "--metric-plot",
-        str(DATA / f"{prefix}_success_precision.png"),
+        f"datasets/{prefix}_success_precision.png",
         "--log",
-        str(DATA / f"{prefix}_log.csv"),
+        f"datasets/{prefix}_log.csv",
         "--report",
-        str(DATA / f"{prefix}_report.json"),
+        f"datasets/{prefix}_report.json",
     ]
-    subprocess.run(command, check=True)
+    subprocess.run(command, check=True, cwd=ROOT)
     with (DATA / f"{prefix}_report.json").open(encoding="utf-8") as fh:
         return json.load(fh)
 

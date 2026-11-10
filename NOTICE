@@ -1,0 +1,24 @@
+DriftGuard code is licensed under the MIT License (see LICENSE).
+
+Third-party data and media
+==========================
+
+OTB-2015 Jogging
+- Source: Visual Tracker Benchmark (OTB100)
+- Authors: Yi Wu, Jongwoo Lim, Ming-Hsuan Yang
+- Citation: "Object Tracking Benchmark", IEEE TPAMI, 2015
+- The OTB frames and annotations are the work of their original authors and
+  are subject to the OTB benchmark's research-use terms. They are not covered
+  by the MIT license. The video is not committed; download_otb_jogging.py
+  fetches the archived OTB sequence. The derived ground-truth CSV files and
+  result figures in this repository are included for reproducibility with
+  attribution.
+
+OpenCV vtest.avi
+- Source: OpenCV sample data.
+- vtest.avi is not committed; `python driftguard.py --download` fetches the
+  OpenCV sample.
+
+Report and screenshots
+- The technical report and report figures contain frames from the datasets
+  above. They are included for documentation and research reproducibility.

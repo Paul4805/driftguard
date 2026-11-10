@@ -521,3 +521,11 @@ driftguard_report.json     generated summary
   known box is intentional, and prevents false identity switches.
 - The output AVI uses MJPG for broad OpenCV compatibility, which makes the file
   larger than an H.264/MP4 encode.
+
+## 12. License and data attribution
+
+The DriftGuard code is released under the MIT License. The OTB Jogging frames
+and annotations remain the work of their original authors and are subject to
+the OTB benchmark's research-use terms; they are not covered by the MIT
+license. The OpenCV `vtest.avi` sample belongs to the OpenCV project. See
+[`NOTICE`](NOTICE) and [`datasets/README.md`](datasets/README.md).

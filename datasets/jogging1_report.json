@@ -1,5 +1,5 @@
 {
-  "video": "C:\\Users\\J Paul Masillamni\\Documents\\projects\\cv\\datasets\\jogging_1.avi",
+  "video": "datasets/jogging_1.avi",
   "total_frames": 307,
   "fps_input": 30.0,
   "psr_threshold": 7.0,
