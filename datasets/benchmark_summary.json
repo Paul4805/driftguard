@@ -1,0 +1,67 @@
+{
+  "sequences": [
+    "Jogging-1",
+    "Jogging-2"
+  ],
+  "total_gt_frames": 614,
+  "per_sequence": {
+    "Jogging-1": {
+      "driftguard": {
+        "gt_frames": 307.0,
+        "success_rate_iou_0.5": 0.9674267100977199,
+        "success_auc": 0.7697294159383365,
+        "mean_iou": 0.7725204890096102,
+        "precision_center_20px": 1.0,
+        "precision_auc_50px": 0.8732196461646546,
+        "mean_center_error_px": 5.9765999472432965
+      },
+      "baseline": {
+        "gt_frames": 307.0,
+        "success_rate_iou_0.5": 0.2247557003257329,
+        "success_auc": 0.18489373367304154,
+        "mean_iou": 0.17801734235420064,
+        "precision_center_20px": 0.23127035830618892,
+        "precision_auc_50px": 0.21843264993293737,
+        "mean_center_error_px": 98.63747911567235
+      }
+    },
+    "Jogging-2": {
+      "driftguard": {
+        "gt_frames": 307.0,
+        "success_rate_iou_0.5": 1.0,
+        "success_auc": 0.7772438481633179,
+        "mean_iou": 0.7799270217296654,
+        "precision_center_20px": 1.0,
+        "precision_auc_50px": 0.9251453024206424,
+        "mean_center_error_px": 3.3147565365493254
+      },
+      "baseline": {
+        "gt_frames": 307.0,
+        "success_rate_iou_0.5": 1.0,
+        "success_auc": 0.7410584706679137,
+        "mean_iou": 0.7434964417035763,
+        "precision_center_20px": 1.0,
+        "precision_auc_50px": 0.9100721721913521,
+        "mean_center_error_px": 4.093394388374814
+      }
+    }
+  },
+  "aggregate": {
+    "driftguard": {
+      "success_rate_iou_0.5": 0.9837133550488599,
+      "success_auc": 0.7734866320508272,
+      "mean_iou": 0.7762237553696378,
+      "precision_center_20px": 1.0,
+      "precision_auc_50px": 0.8991824742926485,
+      "mean_center_error_px": 4.64567824189631
+    },
+    "baseline": {
+      "success_rate_iou_0.5": 0.6123778501628665,
+      "success_auc": 0.46297610217047763,
+      "mean_iou": 0.4607568920288884,
+      "precision_center_20px": 0.6156351791530945,
+      "precision_auc_50px": 0.5642524110621447,
+      "mean_center_error_px": 51.365436752023584
+    }
+  }
+}

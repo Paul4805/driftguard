@@ -1,0 +1,34 @@
+{
+  "video": "vtest.avi",
+  "total_frames": 795,
+  "fps_input": 10.0,
+  "psr_threshold": 7.0,
+  "recovery_delay_frames": 10,
+  "driftguard": {
+    "drift_flagged_frames": 444,
+    "drift_episodes": 2,
+    "recovery_attempts": 2,
+    "reinitializations": 1,
+    "frozen_model_recoveries": 0,
+    "successful_recoveries": 1,
+    "recovery_success_rate": 0.5,
+    "lost_timeout_frames": 391,
+    "model_updates": 348,
+    "frozen_updates": 446,
+    "healthy_psr_frames": 350,
+    "healthy_psr_rate": 0.44080604534005036,
+    "mean_psr": 11.193933868082373,
+    "avg_processing_fps": 408.15136219367344,
+    "overall_pipeline_fps": 101.57291471701937
+  },
+  "baseline": {
+    "drift_flagged_frames": 103,
+    "drift_episodes": 13,
+    "healthy_psr_frames": 691,
+    "healthy_psr_rate": 0.8702770780856424,
+    "mean_psr": 19.01730326634315,
+    "avg_processing_fps": 531.3477463359825
+  },
+  "ground_truth": null,
+  "runtime_seconds": 7.826889700023457
+}

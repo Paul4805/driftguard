@@ -1,0 +1,53 @@
+{
+  "video": "C:\\Users\\J Paul Masillamni\\Documents\\projects\\cv\\datasets\\jogging_1.avi",
+  "total_frames": 307,
+  "fps_input": 30.0,
+  "psr_threshold": 7.0,
+  "recovery_delay_frames": 10,
+  "driftguard": {
+    "drift_flagged_frames": 16,
+    "drift_episodes": 1,
+    "recovery_attempts": 1,
+    "reinitializations": 1,
+    "frozen_model_recoveries": 0,
+    "successful_recoveries": 1,
+    "recovery_success_rate": 1.0,
+    "lost_timeout_frames": 0,
+    "model_updates": 288,
+    "frozen_updates": 18,
+    "healthy_psr_frames": 290,
+    "healthy_psr_rate": 0.9477124183006536,
+    "mean_psr": 24.978094140146013,
+    "avg_processing_fps": 793.9069350237145,
+    "overall_pipeline_fps": 272.6131255831462
+  },
+  "baseline": {
+    "drift_flagged_frames": 16,
+    "drift_episodes": 5,
+    "healthy_psr_frames": 290,
+    "healthy_psr_rate": 0.9477124183006536,
+    "mean_psr": 24.253091997207957,
+    "avg_processing_fps": 927.2526514892187
+  },
+  "ground_truth": {
+    "driftguard": {
+      "gt_frames": 307.0,
+      "success_rate_iou_0.5": 0.9674267100977199,
+      "success_auc": 0.7697294159383365,
+      "mean_iou": 0.7725204890096102,
+      "precision_center_20px": 1.0,
+      "precision_auc_50px": 0.8732196461646546,
+      "mean_center_error_px": 5.9765999472432965
+    },
+    "baseline": {
+      "gt_frames": 307.0,
+      "success_rate_iou_0.5": 0.2247557003257329,
+      "success_auc": 0.18489373367304154,
+      "mean_iou": 0.17801734235420064,
+      "precision_center_20px": 0.23127035830618892,
+      "precision_auc_50px": 0.21843264993293737,
+      "mean_center_error_px": 98.63747911567235
+    }
+  },
+  "runtime_seconds": 1.1261379999341443
+}
