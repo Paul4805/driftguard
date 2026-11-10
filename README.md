@@ -117,13 +117,14 @@ python driftguard.py --source vtest.avi --display
 
 Press `Esc` to stop early. The output video is still written.
 
-To reproduce the real annotated benchmark, first download the OTB Jogging
-sequence, then run the benchmark:
+To reproduce the real annotated benchmark:
 
 ```bash
-python download_otb_jogging.py
 python benchmark_otb.py
 ```
+
+The 3.3 MB OTB Jogging video and its annotations are included in `datasets/`.
+If you remove the video, rebuild it with `python download_otb_jogging.py`.
 
 ---
 
@@ -467,8 +468,6 @@ The report adds OTB-style metrics for both trackers:
 The included OTB Jogging benchmark can be reproduced with:
 
 ```bash
-python download_otb_jogging.py
-
 python driftguard.py --source datasets/jogging_1.avi \
   --bbox 111,98,25,101 --gt datasets/jogging_1_gt.csv \
   --metric-plot datasets/jogging1_success_precision.png
@@ -494,8 +493,8 @@ requirements.txt           Python dependencies
 README.md                  this document
 tests/test_driftguard.py   unit/smoke tests
 vtest.avi                  downloaded OpenCV sample clip (not committed)
-datasets/                  GT CSVs, benchmark outputs, small result figures
-datasets/jogging_1.avi     downloaded OTB sequence (not committed)
+datasets/                  OTB sequence, GT CSVs, benchmark outputs, figures
+datasets/jogging_1.avi     3.3 MB OTB sequence (committed for reproducibility)
 driftguard_output.avi      generated annotated output (not committed)
 psr_comparison.png         generated PSR plot
 preview.jpg                one annotated output frame

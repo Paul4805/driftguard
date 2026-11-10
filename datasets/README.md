@@ -22,7 +22,7 @@ results obtained with it.
 
 | File | Description |
 |---|---|
-| `jogging_1.avi` | All 307 Jogging frames, 352x288, 30 FPS, MJPG (download; not committed) |
+| `jogging_1.avi` | All 307 Jogging frames, 352x288, 30 FPS, MJPG |
 | `jogging_1_gt.csv` | Official `groundtruth_rect.1.txt` converted to `frame,x,y,w,h` |
 | `jogging_2_gt.csv` | Official `groundtruth_rect.2.txt` converted to `frame,x,y,w,h` |
 | `jogging1_output.avi` | DriftGuard output for target 1 |
@@ -46,8 +46,8 @@ freezing and recovery.
 
 ## Reproduce
 
-The 307-frame AVI is not committed to the repository (large binary). Download
-and build it with:
+The 307-frame AVI is included in this directory (3.3 MB) for immediate
+reproducibility. If you remove it, rebuild it with:
 
 ```bash
 python download_otb_jogging.py

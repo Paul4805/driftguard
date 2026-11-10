@@ -18,6 +18,8 @@ vtest.avi
 *.avi
 datasets/*.avi
 datasets/*_output.avi
+# The 3.3 MB OTB Jogging video is intentionally included for reproducibility.
+!datasets/jogging_1.avi
 
 # Generated smoke-test artifacts
 smoke.*

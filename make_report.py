@@ -636,9 +636,9 @@ def build_story() -> list:
             "Source archive used: the Wayback Machine copy of "
             "<font name=\"Courier\">http://cvlab.hanyang.ac.kr/tracker_benchmark/seq/Jogging.zip</font> "
             "(snapshot dated 2022-02-10). The original OTB site is no longer reliably available; "
-            "the archived file is the one used by public OTB downloading scripts. The GT "
-            "annotations and benchmark outputs are included for research and reproducibility; "
-            "the video can be rebuilt with <font name=\"Courier\">download_otb_jogging.py</font>. "
+            "the archived file is the one used by public OTB downloading scripts. The 3.3 MB video, "
+            "GT annotations and benchmark outputs are included for research and reproducibility; "
+            "<font name=\"Courier\">download_otb_jogging.py</font> can rebuild the assets if needed. "
             "Attribution is in <font name=\"Courier\">datasets/README.md</font>.",
             BODY_LEFT,
         ),
